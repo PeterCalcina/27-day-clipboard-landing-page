@@ -5,6 +5,7 @@ window.addEventListener('scroll', function () {
     animationTrackSummaries(['track_summary_1', 'track_summary_2', 'track_summary_3'], ['animation_right', 'animation_left', 'animation_right'], [1, 1, 1]);
     animationAccess('.access__clipboard__title', 'animation_top', 1);
     animationAccess('.access__clipboard__description', 'animation_opacity', 2);
+    animationAccess('.access__clipboard__img', 'animation_right', 1);
     animationAccess('.workflow__title', 'animation_top', 1);
     animationAccess('.workflow__description', 'animation_opacity', 2);
     animationWorkflowSummaries(['workflow_summary_1', 'workflow_summary_2', 'workflow_summary_3'], ['animation_scale', 'animation_scale', 'animation_scale'], [1, 1, 1], [0.2, 0.4, 0.6]);
