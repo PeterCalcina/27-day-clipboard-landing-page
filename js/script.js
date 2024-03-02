@@ -1,18 +1,18 @@
 window.addEventListener('scroll', function () {
-  let windowHeight = window.innerHeight;
 
-  // Llama a las funciones de animación con los parámetros necesarios
-  animationTrack('.track__content_img', 'animation_left', 1);
-  animationTrackSummaries(['track_summary_1', 'track_summary_2', 'track_summary_3'], ['animation_right', 'animation_left', 'animation_right'], [1, 1, 1]);
-  animationAccess('.access__clipboard__title', 'animation_top', 1);
-  animationAccess('.access__clipboard__description', 'animation_opacity', 2);
-  animationAccess('.workflow__title', 'animation_top', 1);
-  animationAccess('.workflow__description', 'animation_opacity', 2);
-  animationWorkflowSummaries(['workflow_summary_1', 'workflow_summary_2', 'workflow_summary_3'], ['animation_scale', 'animation_scale', 'animation_scale'], [1, 1, 1], [0.2, 0.4, 0.6]);
-  animationAccess('.images', 'animation_opacity', 2);
-  animationAccess('.clipboard__title', 'animation_left', 1.5);
-  animationAccess('.clipboard__description', 'animation_right', 1.5);
-  animationButtons('btn_1', 'btn_2', 'animation_right', 'animation_left', 1);
+  if (window.innerWidth > 769) {
+    animationTrack('.track__content_img', 'animation_left', 1);
+    animationTrackSummaries(['track_summary_1', 'track_summary_2', 'track_summary_3'], ['animation_right', 'animation_left', 'animation_right'], [1, 1, 1]);
+    animationAccess('.access__clipboard__title', 'animation_top', 1);
+    animationAccess('.access__clipboard__description', 'animation_opacity', 2);
+    animationAccess('.workflow__title', 'animation_top', 1);
+    animationAccess('.workflow__description', 'animation_opacity', 2);
+    animationWorkflowSummaries(['workflow_summary_1', 'workflow_summary_2', 'workflow_summary_3'], ['animation_scale', 'animation_scale', 'animation_scale'], [1, 1, 1], [0.2, 0.4, 0.6]);
+    animationAccess('.images', 'animation_opacity', 2);
+    animationAccess('.clipboard__title', 'animation_left', 1.5);
+    animationAccess('.clipboard__description', 'animation_right', 1.5);
+    animationButtons('btn_1', 'btn_2', 'animation_right', 'animation_left', 1);
+  }
 });
 
 // Función genérica para animar elementos

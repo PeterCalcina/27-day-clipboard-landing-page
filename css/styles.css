@@ -118,6 +118,7 @@ p {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  width: 100%;
   height: 500px;
   background: url('../images/bg-header-desktop.png') no-repeat top center/contain;
 }
@@ -434,17 +435,52 @@ p {
 }
 
 
-
-
 /* Media Queries */
 
 @media (width < 769px) {
   .header__content {
-    height: 600px;
+    height: auto;
+    padding-inline: 40px;
+    background: url('../images/bg-header-mobile.png') no-repeat top center/contain;
+  }
+
+  .header__content .header__logo {
+    width: 130px;
+    height: 130px;
   }
 
   .header__content .header__title {
-    width: 80%;
+    width: 100%;
+    margin-top: 50px;
+    white-space: normal;
+    font-size: 2.1rem;
+    animation: animation_left 1s ease;
+  }
+
+  .header__content .header__description {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 17.3px;
+    animation: animation_right 1s ease;
+  }
+
+  .header__content .header__buttons {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .container{
+    padding: 6rem 40px;
+  }
+
+  .container .common__header {
+    width: 100%;
+  }
+
+  .container .track .track__header .track__description {
+    margin-top: 30px;
   }
 
   .container .track .track__content {
@@ -463,12 +499,26 @@ p {
     width: 100%;
   }
 
-  .container .track .track__content .track__content__summaries .track__content__summary .track__content__summary_description {
+  .container .track .track__content .track__content__summaries .track__content__summary .track__content__summary_title {
     text-align: center;
   }
 
+  .container .track .track__content .track__content__summaries .track__content__summary .track__content__summary_description {
+    text-align: center;
+    font-size: 18px;
+  }
+
+
   .container .access__clipboard {
     padding: 3rem 0;
+  }
+
+  .container .access__clipboard .access__clipboard__header .access__clipboard__description {
+    font-size: 17px;
+  }
+
+  .container .access__clipboard .access__clipboard__content img {
+    width: 100%;
   }
 
   .container .workflow .workflow__content {
@@ -479,11 +529,16 @@ p {
 
   .container .workflow .workflow__content .workflow__content__summary {
     width: 100%;
+    transform: scale(1);
+  }
+
+  .container .workflow .workflow__content .workflow__content__summary .workflow__content__summary_description {
+    font-size: 17px;
   }
 
   .container .images {
     flex-direction: column;
-    gap: 3rem;
+    gap: 5rem;
     padding: 3rem 0;
   }
 
@@ -491,7 +546,103 @@ p {
     padding: 3rem 0;
   }
 
-  .footer__info {
-    padding: 2rem 0;
+  .container .clipboard .clipboard__header .clipboard__title {
+    font-size: 2rem;
   }
+
+  .container .clipboard .clipboard__header .clipboard__description {
+    font-size: 17.4px;
+  }
+
+  .container .clipboard .clipboard__content__buttons {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .footer__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  .footer__info .footer_info__links {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footer__info .footer__social__links {
+    gap: 3rem;
+  }
+}
+
+@media (width < 376px) {
+  .header__content .header__title {
+    font-size: 1.8rem;
+  }
+
+  .header__content .header__description {
+    font-size: 15.3px;
+  }
+
+  .container .track .track__header .track__title {
+    font-size: 1.6rem;
+  }
+
+  .container .track .track__header .track__description {
+    font-size: 16px;
+  }
+
+  .container .track .track__content .track__content__summaries .track__content__summary .track__content__summary_description {
+    font-size: 16px;
+  }
+
+  .container .access__clipboard .access__clipboard__header .access__clipboard__title {
+    font-size: 1.6rem;
+  }
+
+  .container .access__clipboard .access__clipboard__header .access__clipboard__description {
+    font-size: 15px;
+  }
+
+  .container .workflow .workflow__header .workflow__title {
+    font-size: 1.9rem;
+  }
+
+  .container .workflow .workflow__content .workflow__content__summary .workflow__content__summary_title {
+    font-size: 1.4rem;
+  }
+
+  .container .workflow .workflow__content .workflow__content__summary .workflow__content__summary_description {
+    font-size: 15px;
+  }
+
+  .container .clipboard .clipboard__header .clipboard__title {
+    font-size: 1.6rem;
+  }
+
+  .container .clipboard .clipboard__header .clipboard__description {
+    font-size: 15.5px;
+  }
+
+  .footer__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+  }
+
+  .footer__info .footer_info__links {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
 }
