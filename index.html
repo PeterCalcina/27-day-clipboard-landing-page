@@ -22,13 +22,14 @@
 
 <body>
 
-    <header class="header_content">
+    <header class="header__content">
         <img class="header__logo" src="images/logo.svg" alt="Logo">
 
         <h1 class="header__title">A history of everything you copy</h1>
 
         <p class="header__description">
-            Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your devices.
+            Clipboard allows you to track and organize everything you copy. Instantly access your clipboard on all your
+            devices.
         </p>
 
         <div class="header__buttons">
@@ -39,32 +40,33 @@
 
     <main class="container">
         <section class="track">
-            <div class="track__header">
-                <h3 class="track__title">Keep track of your snippets</h3>
+            <div class="track__header common__header">
+                <h3 class="track__title common__title">Keep track of your snippets</h3>
                 <p class="track__description">
-                    Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.
+                    Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets
+                    immediately on all your devices. Our Mac and iOS apps will help you organize everything.
                 </p>
             </div>
-            
+
             <div class="track__content">
                 <img class="track__content_img" src="images/image-computer.png" alt="Image Computer">
 
                 <div class="track__content__summaries">
-                    <div class="track__content__summary">
+                    <div class="track__content__summary" id="track_summary_1">
                         <h4 class="track__content__summary_title">Quick Search</h4>
                         <p class="track__content__summary_description">
                             Easily search your snippets by content, category, web address, application, and more.
                         </p>
                     </div>
 
-                    <div class="track__content__summary">
+                    <div class="track__content__summary" id="track_summary_2">
                         <h4 class="track__content__summary_title">iCloud Sync</h4>
                         <p class="track__content__summary_description">
                             Instantly saves and syncs snippets across all your devices.
                         </p>
                     </div>
 
-                    <div class="track__content__summary">
+                    <div class="track__content__summary" id="track_summary_3">
                         <h4 class="track__content__summary_title">Complete History</h4>
                         <p class="track__content__summary_description">
                             Retrieve any snippets from the first moment you started using the app.
@@ -75,10 +77,11 @@
         </section>
 
         <section class="access__clipboard">
-            <div class="access__clipboard__header">
-                <h3 class="access__clipboard__title">Access Clipboard anywhere</h3>
+            <div class="access__clipboard__header common__header">
+                <h3 class="access__clipboard__title common__title">Access Clipboard anywhere</h3>
                 <p class="access__clipboard__description">
-                    Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.
+                    Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few
+                    simple clicks.
                 </p>
             </div>
 
@@ -88,15 +91,15 @@
         </section>
 
         <section class="workflow">
-            <div class="workflow__header">
-                <h3 class="workflow__title">Supercharge your workflow</h3>
+            <div class="workflow__header common__header">
+                <h3 class="workflow__title common__title">Supercharge your workflow</h3>
                 <p class="workflow__description">
                     We’ve got the tools to boost your productivity.
                 </p>
             </div>
 
             <div class="workflow__content">
-                <div class="workflow__content__summary">
+                <div class="workflow__content__summary" id="workflow_summary_1">
                     <img class="workflow__content__summary_img" src="images/icon-blacklist.svg" alt="Icon blacklist">
                     <h4 class="workflow__content__summary_title">Create blacklists</h4>
                     <p class="workflow__content__summary_description">
@@ -104,7 +107,7 @@
                     </p>
                 </div>
 
-                <div class="workflow__content__summary">
+                <div class="workflow__content__summary" id="workflow_summary_2">
                     <img class="workflow__content__summary_img" src="images/icon-text.svg" alt="Icon text">
                     <h4 class="workflow__content__summary_title">Plain text snippets</h4>
                     <p class="workflow__content__summary_description">
@@ -112,7 +115,7 @@
                     </p>
                 </div>
 
-                <div class="workflow__content__summary">
+                <div class="workflow__content__summary" id="workflow_summary_3">
                     <img class="workflow__content__summary_img" src="images/icon-preview.svg" alt="Icon preview">
                     <h4 class="workflow__content__summary_title">Sneak preview</h4>
                     <p class="workflow__content__summary_description">
@@ -123,33 +126,32 @@
         </section>
 
         <section class="images">
-            <div class="images__content">
-                <img class="images__content_img" src="images/logo-google.png" alt="Logo Google">
-                <img class="images__content_img" src="images/logo-ibm.png" alt="Logo IBM">
-                <img class="images__content_img" src="images/logo-microsoft.png" alt="Logo Microsoft">
-                <img class="images__content_img" src="images/logo-hp.png" alt="Logo Hewlett Packard">
-                <img class="images__content_img" src="images/logo-vector-graphics.png" alt="Logo Vector">
-            </div>
+            <img class="images__content_img" src="images/logo-google.png" alt="Logo Google">
+            <img class="images__content_img" src="images/logo-ibm.png" alt="Logo IBM">
+            <img class="images__content_img" src="images/logo-microsoft.png" alt="Logo Microsoft">
+            <img class="images__content_img" src="images/logo-hp.png" alt="Logo Hewlett Packard">
+            <img class="images__content_img" src="images/logo-vector-graphics.png" alt="Logo Vector">
         </section>
 
         <section class="clipboard">
-            <div class="clipboard__header">
-                <h3 class="clipboard__title">Clipboard for iOS and Mac OS</h3>
+            <div class="clipboard__header common__header">
+                <h3 class="clipboard__title common__title">Clipboard for iOS and Mac OS</h3>
                 <p class="clipboard__description">
-                    Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.
+                    Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to
+                    start adding to your clipboard.
                 </p>
             </div>
 
             <div class="clipboard__content__buttons">
-                <button class="btn">Download for iOS</button>
-                <button class="btn">Download for Mac</button>
+                <button class="btn" id="btn_1">Download for iOS</button>
+                <button class="btn" id="btn_2">Download for Mac</button>
             </div>
         </section>
-
     </main>
 
     <footer class="footer__info">
         <img src="images/logo.svg" alt="Icon Logo" class="footer__logo">
+
         <div class="footer_info__links">
             <a href="#" class="footer__info__link">FAQs</a>
             <a href="#" class="footer__info__link">Contac Us</a>
@@ -157,6 +159,7 @@
             <a href="#" class="footer__info__link">Press Kit</a>
             <a href="#" class="footer__info__link">Install Guide</a>
         </div>
+
         <div class="footer__social__links">
             <a href="#" class="footer__social__link">
                 <img src="images/icon-facebook.svg" alt="Icon Facebook">
@@ -170,6 +173,7 @@
         </div>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 
 </html>
